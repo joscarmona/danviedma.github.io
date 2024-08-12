@@ -1,0 +1,520 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+body {
+    font-family: "Roboto", sans-serif;
+    background-color: #E8E8EE;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    height: 100vh;
+    background-color: #fff9c4;
+    background-color: #F8F8FF;
+    background-color: #E8E8EE;
+    color: #333;
+    padding: 20px 0;
+    text-align: center;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+nav {
+    padding-top: 2em;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #555;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+nav ul li a:hover {
+    background-color: #e0f7fa;
+    color: #00796b;
+}
+
+.header-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+    padding: 0 100px;
+}
+
+.header-section img, .education-card img {
+    width: 28em;
+    border-radius: 15px; 
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+
+.header-section img:hover {
+    transform: scale(1.05); /* Efecto de zoom al pasar el ratón */
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+}
+
+.education-card img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+}
+
+
+.div-section {
+    width: 50%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+#welcome {
+    font-size: 1.4em;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+#welcome p {
+    font-size: 1em;
+    text-align: justify;
+    color: #666;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #00796b;
+    text-align: left;
+    font-weight: 300;
+}
+
+.section-container{
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 50px 20px;
+    background-color: #f5f5f5;
+    
+}
+    
+
+.section-container h2{
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.cards-section {
+
+    display: flex;
+    justify-content: space-around;
+    align-items: stretch;
+    padding: 50px 20px;
+    
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card img {
+    width: 100%;
+    height: 10em;
+    /* object-fit: cover; */
+}
+
+
+.card h2 {
+    margin-top: 10px;
+    font-size: 1.2em;
+    color: #00796b;
+    padding: 0 20px;
+}
+
+.card p {
+    font-size: 1em;
+    color: #666;
+    padding: 0 20px;
+}
+
+.card .btn {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #ffffff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.card .btn:hover {
+    background-color: #005b4f;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+}
+
+.education-section{
+    height: 100vh;
+    background-color: #E8E8EE;
+  
+}
+.education-section h2{
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+.education-card{
+    background-color: #ffffff;
+    border: 1px solid #e0e0e0;
+    display: flex;
+    height: 200px;
+    margin: 2.5em;
+    padding: 2.5em;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.education-card img{
+    width: 30%;
+    height: 100%;
+    /* object-fit: cover; */
+    border-radius: 5px;
+}
+
+/* estilos formulario */
+
+.contact-container{
+    background-color: #fff8e1;
+}
+.contact-section {
+    margin: 0 auto;
+    padding-bottom: 50px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    min-height: 50vh;
+}
+
+.contact-section form {
+    background-color: #ffffff;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-section label {
+    font-size: 1.1em;
+    color: #00796b;
+   
+}
+
+.contact-section input[type="text"],
+.contact-section input[type="email"], #message {
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+}
+
+.contact-section input[type="text"]:focus,
+.contact-section input[type="email"]:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.contact-section input[type="submit"] {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.contact-section input[type="submit"]:hover {
+    background-color: #005b4f;
+}
+
+.contact-section input[type="submit"]:active {
+    transform: scale(0.98);
+}
+
+.contact-section textarea {
+    resize: vertical; 
+    max-height: 200px; 
+    min-height: 60px; 
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
+    transition: border-color 0.3s ease;
+    width: 100%;
+}
+
+.contact-section textarea:focus {
+    border-color: #00796b;
+    outline: none;
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.contact-container{
+   padding-top: 20px;
+}
+.contact-container h2{
+    font-size: 2em;
+    color: #00796b;
+    font-weight: 300;
+    text-align: center;
+}
+
+.contact-container p{
+    font-size: 1em;
+    color: #666;
+    text-align: center;
+}
+
+footer {
+    background-color: #00796b;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+footer p {
+    margin: 0;
+    font-size: 1em;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.social-icons a img {
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+}
+
+.social-icons a:hover {
+    transform: scale(1.1);
+}
+
+.social-icons a img:hover {
+    filter: brightness(1.2);
+}
+
+.section-container-port{
+    height: 100vh;
+    
+}
+
+.section-container-port h1{
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+#volver img{
+    width: 3em;
+    border-radius: 15px; 
+    transition: transform 0.3s ease, box-shadow 0.3s ease; 
+}
+#volver img:hover {
+    transform: scale(1.05); 
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25); 
+}
+
+.section-container-port h1{
+    font-size: 2em;
+    color: #00796b;
+    margin-bottom: 20px;
+    font-weight: 300;
+    text-align: center;
+}
+
+
+/* Estilos para pantallas pequeñas (móviles) */
+@media only screen and (max-width: 768px) {
+    header {
+        height: auto;
+        padding: 20px 10px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .header-section {
+        flex-direction: column;
+        padding: 0 20px;
+        height: auto;
+    }
+
+    .header-section img {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .div-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section-container, .education-section, .contact-container {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .cards-section, .place-container {
+        flex-direction: column;
+        padding: 20px 10px;
+    }
+
+    .card, .education-card {
+        width: 100%;
+        margin-bottom: 20px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    /* Ocultar imágenes en la sección de educación */
+    .education-card img {
+        display: none;
+    }
+
+    .education-card div {
+        text-align: center;
+        width: 100%;
+    }
+
+    .education-card {
+        margin: 0 auto; /* Centra la tarjeta en el contenedor */
+        max-width: 500px; /* Limita el ancho máximo para que no se vea demasiado ancha */
+    }
+
+    .contact-section form {
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+
+/* Estilos para pantallas medianas (tabletas) */
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .header-section {
+        flex-direction: column;
+        padding: 0 50px;
+        height: auto;
+    }
+
+    .header-section img {
+        width: 60%;
+        margin-bottom: 20px;
+    }
+
+    .div-section {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .section-container, .education-section, .contact-container {
+        padding: 30px 20px;
+        height: auto;
+    }
+
+    .cards-section, .place-container {
+        flex-direction: column;
+        padding: 30px 20px;
+    }
+
+    .card, .education-card {
+        width: 80%;
+        margin: 0 auto 20px;
+    }
+
+    .education-card {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .education-card img {
+        width: 40%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+
+    .contact-section form {
+        width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+}
+
+
+
+
+
